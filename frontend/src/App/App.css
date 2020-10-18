@@ -1,0 +1,233 @@
+/*  ///// General Styling  ///// */
+
+.App{
+    padding-bottom: 50px;
+}
+
+:root {
+    --main-color: black;
+  }
+  
+
+h1{
+    text-align: center;
+    padding: 40px 0 50px 0;
+    margin:0;
+    color: var(--main-color);
+}
+
+p{
+    color: var(--main-color);
+}
+
+button:hover, .emoji-mart-category span:hover{
+    cursor: pointer;
+}
+
+input{
+    background-color: transparent;
+}
+
+::placeholder {
+    color: var(--main-color);
+    padding-left:5px;
+  }
+
+
+/*  ///// Nav ///// */
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 50px 0 0;
+    height:40px;
+}
+
+nav li{
+    float: right;
+    padding:10px;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+nav li:hover {
+    cursor: pointer;
+    color: rgb(139, 138, 138);
+}
+  
+/*  ///// Todos  ///// */
+
+.todoList{
+    margin:35px auto;
+    width:60vw;
+    padding:0 0 20px 0;
+}
+
+.todo{
+    border: 2px var(--main-color) solid; 
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    padding:10px ;
+    margin:10px 0 10px 0;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.todo span{
+    width:30px;
+    height:30px;
+    font-size:30px;
+    margin:  10px;
+}
+
+.todo p{
+    width:50%;
+}
+
+.todo button{
+    width:50px;
+    height:50px;
+    font-size:25px;
+    border: none !important;
+    background-color: transparent;
+}
+
+.todoDone{
+    background-color: lightgreen;
+}
+
+/*  ///// Form  ///// */
+
+.todoForm{
+    display: flex;
+    width:60vw;
+    margin:auto;
+    justify-content: space-evenly;
+}
+
+.inputContainer * {  
+    border: 2px var(--main-color) solid; 
+    border-radius: 5px; 
+    padding:10px;
+    height: 50px;
+}
+
+.formInput {
+    max-height: 25px !important;
+    margin-right:5px;
+}
+
+.formBtn {
+    background-color: transparent;
+    width:60px;
+    color: var(--main-color);
+}
+
+.emojiContainer{
+    position: relative;
+}
+
+.emojiLabel{
+    border: 2px var(--main-color) solid; 
+    border-radius: 5px; 
+    padding:10px;
+    width: 170px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.emojiLabel:hover{
+    cursor: pointer;
+}
+
+.emoji-mart{
+    width: 190px !important;
+    padding:10px;
+}
+
+.emoji-mart-bar{
+    display: none !important; 
+}
+
+.emoji-mart-search{
+    display: none !important; 
+}
+
+.reactions{
+    display:none;
+    position: absolute;
+}
+
+.emojiList{
+    display:block;
+}
+
+.color-changer {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border: 2px solid var(--main-color);
+    padding: 8px 16px 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+  
+  
+.color-changer input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/*  ///// About  ///// */
+
+.about{
+    text-align: center;
+    height:100vh;
+}
+
+@media only screen and (max-width: 780px) {
+    .todoList{
+        width:90vw;
+    }
+
+    .todoForm{
+        width:90vw;
+    }
+   
+  }
+
+  @media only screen and (max-width: 490px) {
+    .emojiLabel{
+        width: 80px;
+        padding:2px;
+    }
+
+    .formInput {
+       width: 80px;
+    }
+
+    .todo span{
+        width:20px;
+        height:20px;
+        font-size:20px;
+        margin: 5px;
+    }
+
+    .todo button{
+        width:25px;
+        height:25px;
+        font-size:15px;
+    }
+
+    .todo p{
+        margin: 0; 
+    } 
+  }
